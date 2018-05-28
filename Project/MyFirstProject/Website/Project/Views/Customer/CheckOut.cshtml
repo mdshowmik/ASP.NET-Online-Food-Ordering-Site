@@ -1,0 +1,54 @@
+﻿@{
+    ViewBag.Title = "CheckOut";
+    Layout = "~/Views/Shared/_CustomerLayout.cshtml";
+}
+<form method="post">
+<table>
+    <tr>
+        <td>
+            <table style="float:left;margin-left:50px;padding:5px;">
+                <tr>
+                    <td colspan="2"><p><h3>Delivery address:</h3></p></td>
+                </tr>
+                <tr>
+                    <td>Flat# :</td>
+                    <td>@Html.TextBox("flat")</td>
+                </tr>
+                <tr>
+                    <td>House# :</td>
+                    <td>@Html.TextBox("house")</td>
+                </tr>
+                <tr>
+                    <td>Road# :</td>
+                    <td>@Html.TextBox("road")</td>
+                </tr>
+                <tr>
+                    <td>Area :</td>
+                    <td>@Html.TextBox("area")</td>
+                </tr>
+                <tr>
+                    <td>District :</td>
+                    <td>@Html.TextBox("district")</td>
+                </tr>
+                <tr>
+                    <td>Contact Number :</td>
+                    <td>@Html.TextBox("contact")</td>
+                </tr>
+            </table>
+
+        <br/>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <br/>
+        </td>
+    </tr>
+    <tr>
+        <td align="center">
+            <input type="submit" value="Confirm Order" align="center"/> 
+        </td>
+    </tr>
+
+</table>
+    </form>
